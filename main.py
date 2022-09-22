@@ -2,44 +2,39 @@
 import random
 
 def get_choices():
-
-    
     player_choice = input("Enter a choice (rock, paper, scissors): ")
     options = ["rock",  "paper", "scissors"]
     computer_choice = random.choice(options)
     choices = {"player": player_choice, "computer": computer_choice}
 
-    return choices
-
-
-
-
 
 def check_win(player, computer):
-    #print("You choise " + player + "computer chose" + computer)
-    # f string to do the same:
     print(f"You chose {player}. Computer chose {computer}.")
 
 
+    #scenario 1
     if player == computer:
-        
-        
-        
-        
-        
-    
-
-        
         return "Its a tie!"
 
 
 
+    #scenario 2
+    elif player == "rock":
+        if computer == "scissors" :
+            return "Rock smashes scissors, you win!"
+        else:
+            return "Paper covers rock, you lose..."
 
-age = 25
-print(f"Jin is {age} years old.")
+
+
+    #scenario 3
+    elif player == "paper":
+        if computer == "rock" :
+            return "Paper covers rock. You win!"
+    else:
+        return "Rock smashes scissors! You Win!"
 
 
 
 
-
-
+check_win("rock", "paper")
