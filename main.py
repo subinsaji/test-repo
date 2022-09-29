@@ -17,7 +17,6 @@ def check_win(player, computer):
         return "Its a tie!"
 
 
-
     #scenario 2
     elif player == "rock":
         if computer == "scissors" :
@@ -26,15 +25,20 @@ def check_win(player, computer):
             return "Paper covers rock, you lose..."
 
 
-
     #scenario 3
     elif player == "paper":
         if computer == "rock" :
             return "Paper covers rock. You win!"
-    else:
-        return "Rock smashes scissors! You Win!"
+        else:
+         return "Scissors cut Paper! You lose...!"
 
+    #scenario 4
+    elif player == "scissors":
+        if computer == "paper":
+            return "Scissors cuts paper. You win"
 
+        else:
+            return "Rock beats scissors. You lose."
 
 
 check_win("rock", "paper")
