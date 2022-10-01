@@ -8,12 +8,20 @@ net_climbed_per_day = climbed_per_day-fell_per_night
 
 
 def snail_climbed():
+
+
     while net_climbed_per_day > 0:
+        
         time = Height/net_climbed_per_day
-        if time > 0:
+        
+
+        if climbed_per_day == Height:
+            return print("1")
+
+        elif time > 0:
             return print(time)
-        elif time <= 0:
-            return print("FAIL")
+
+        
     return print("FAIL")
 
 
