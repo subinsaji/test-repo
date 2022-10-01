@@ -4,7 +4,7 @@ climbed_per_day = input[0]
 fell_per_night = input[1]      
 Height = input[2] 
 days = 0
-net_climbed_per_day = climbed_per_day-fell_per_night
+net_climbed_per_day = (climbed_per_day) - (fell_per_night)
 
 
 def snail_climbed():
