@@ -1,5 +1,4 @@
-
-input = [3,2,11]
+input = [3,4,3]
 
 climbed_per_day = input[0] 
 fell_per_night = input[1]      
@@ -9,6 +8,13 @@ net_climbed_per_day = climbed_per_day-fell_per_night
 
 
 def snail_climbed():
-    
-    time = Height/(net_climbed_per_day)
+    while net_climbed_per_day > 0:
+        time = Height/net_climbed_per_day
+        if time > 0:
+            return print(time)
+        elif time <= 0:
+            return print("FAIL")
+    return print("FAIL")
 
+
+snail_climbed()
