@@ -32,4 +32,18 @@ def snail_climbing():
         return print('Fail')
 #hello again 
 
+
+def snail_climbing1():
+    distance = climbed_per_day
+    time = 1
+    if net_climbed_per_day > 0:
+        while distance < Height:
+            distance += net_climbed_per_day
+            time += 1
+        return print(int(time))
+    else:
+        return print('Fail')
+
+
+
 snail_climbing()
