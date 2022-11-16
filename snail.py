@@ -46,4 +46,26 @@ def snail_climbing1():
 
 
 
-snail_climbing()
+def median_arrays():
+
+    arr1 = [1,3,5]
+    arr2 = [2,4,6]
+
+    arr_comb = arr1 + arr2
+    arr_comb.sort()
+
+
+    median_term = len(arr_comb)/2
+
+    if median_term % 2 == 0:
+        term1 = arr_comb[len(arr_comb)/2]
+        term2 = arr_comb[(len(arr_comb)/2) + 1]
+        median = (term1+term2)/2
+
+    else:
+        median = arr_comb[len(arr_comb)]
+
+    return print(median)
+
+median_arrays()
+
