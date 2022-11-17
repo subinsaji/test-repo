@@ -47,7 +47,6 @@ def snail_climbing1():
 
 
 def median_arrays():
-
     arr1 = [1,3,5,8]
     arr2 = [2,4,6]
     arr_comb = arr1 + arr2
@@ -61,5 +60,32 @@ def median_arrays():
         term = int((number_of_terms) / 2) + 1
         median = arr_comb[term-1]  
     return print(median)
-median_arrays()
+
+
+def reverse_string():
+
+    #str = "hello world"
+    #str = str[::-1]
+
+    #str = "hello world"
+    #rev = ""
+    #for i in reversed(str)
+    #rev += i
+
+
+    
+    #return print(rev)
+
+
+    example_str = "Hello World!"
+    reversed_str = ""
+    for i in reversed(example_str):
+        reversed_str += i
+
+    return print(reversed_str)
+
+reverse_string()
+
+
+
 
