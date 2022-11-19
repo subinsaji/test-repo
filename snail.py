@@ -84,7 +84,17 @@ def reverse_string():
 
     return print(reversed_str)
 
-reverse_string()
+
+def Knapsack():
+
+    val = [50,100,150,200]
+    wt = [8,16,32,40]
+    W = 64
+    
+
+
+
+    return
 
 
 
