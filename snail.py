@@ -96,6 +96,13 @@ def Knapsack():
 
     return
 
+def test():
+    array = [2,3,4,5,6,7,8,9]
+    x = array[0:8]
+
+    return print(x1)
+test()
+
 
 
 
