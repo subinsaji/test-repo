@@ -8,9 +8,6 @@ public class Main {
  */
 
 
-
-
-
     public static void main(String[] args){
         String name = "Subin";
         System.out.println("Hello "+name);
@@ -77,6 +74,21 @@ public class Main {
 
          System.out.println(myDouble1);
          
+        
+         double myDouble2 = 9.87d;
+         int myInt3 = (int) myDouble2;
+         System.out.println(myInt3);
+
+         // Java Operators
+
+         int x1 = 100;
+         int x2 = 200;
+
+         System.out.println(x1*x2);
+         System.out.println(x1/x2);
+
+
+
 
 
 
